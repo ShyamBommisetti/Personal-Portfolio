@@ -1,12 +1,11 @@
 
-        // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
-                // Close mobile menu after clicking a link
+                
                 const mobileMenu = document.getElementById('mobile-menu');
                 if (!mobileMenu.classList.contains('hidden')) {
                     mobileMenu.classList.add('hidden');
@@ -14,7 +13,7 @@
             });
         });
 
-        // Typing effect for the hero section
+        
         const typingText = "A Passionate Web Developer";
         const typingElement = document.querySelector('.typing-effect');
         typingElement.textContent = "";
@@ -28,14 +27,14 @@
         }
         document.addEventListener('DOMContentLoaded', typeWriter);
 
-        // Mobile menu toggle
+        
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         mobileMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Scroll reveal animation
+        
         const sections = document.querySelectorAll('.scroll-reveal');
 
         const observerOptions = {

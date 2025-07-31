@@ -1,0 +1,85 @@
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+
+        /* Hero Section Typing Animation */
+        .typing-effect::after {
+            content: '|';
+            animation: blink-caret 0.75s step-end infinite;
+        }
+
+        #about img {
+            height: 500px;
+            width: 500px;
+            margin-left: 130px;
+        }
+
+        #projects #one img,
+        #two img,
+        #three img {
+            height: 300px;
+        }
+
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent;
+            }
+
+            50% {
+                border-color: #10b981;
+            }
+        }
+
+        /* Scroll-Reveal Animation */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+
+        .scroll-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Pulsating Button Effect */
+        @keyframes pulse-once {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .pulse-once {
+            animation: pulse-once 1s ease-in-out;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #e5e7eb;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #4b5563;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #1f2937;
+        }
+

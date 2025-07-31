@@ -4,7 +4,7 @@
             color: #1f2937;
         }
 
-        /* Hero Section Typing Animation */
+
         .typing-effect::after {
             content: '|';
             animation: blink-caret 0.75s step-end infinite;
@@ -34,7 +34,7 @@
             }
         }
 
-        /* Scroll-Reveal Animation */
+
         .scroll-reveal {
             opacity: 0;
             transform: translateY(50px);
@@ -46,7 +46,7 @@
             transform: translateY(0);
         }
 
-        /* Pulsating Button Effect */
+
         @keyframes pulse-once {
             0% {
                 transform: scale(1);
@@ -65,7 +65,7 @@
             animation: pulse-once 1s ease-in-out;
         }
 
-        /* Custom Scrollbar */
+
         ::-webkit-scrollbar {
             width: 8px;
         }
